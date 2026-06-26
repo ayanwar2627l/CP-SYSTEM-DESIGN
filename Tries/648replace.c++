@@ -32,8 +32,8 @@ class Trie{
             if(curr->child[index]==NULL&&curr->isEnd!=true){
                 return;
             }
-            curr=curr->child[index];//do this before checking isEnd other wise it will check parent
-            res+=ch;//add to result when travesing through child as root is a vacant 
+            curr=curr->child[index];
+            res+=ch;
             if(curr->isEnd==true){
                 word=res;
                 return ;
